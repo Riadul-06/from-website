@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #d8c8c8;
+}
+.container {
+    background: #ebdcdc;
+    padding: 2px 30px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #ffffff, -8px -8px 16px #ffffff;
+    width: 400px;
+    text-align: center;
+}
+.logo {
+    font-family: "pacifico", cursive;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #cecece, inset -5px -5px 10px #ffffff;
+    font-size: 14px;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: 6px 6px 10px #ccaaaa, -6px -6px 10px #e7dddd;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+.btn:hover {
+    background: rgb(214, 116, 116);
+    color: #fff; 
+}
+.btn.facebook-btn:hover {
+    background: #3f63b1;
+    color: #fff;
+    i {
+        color: #fff;
+    }
+}
+.divider{
+    margin: 20px 0;
+    color: #999;
+    font-size: 14px;
+}
+.facebook-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.facebook-btn i {
+    color: #3b5998;
+    font-size: 18px;
+}
+.google-btn i {
+    color: #a3807c;
+    font-size: 18px;
+}
+.google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.login-link {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
+.login-link a{
+    color: #6c75ee;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login-link a:hover {
+    text-decoration: underline;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+input:focus {
+    outline: none;
+    box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff, 0 0 5px #6c75ee;
+}
+.facebook-btn a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.google-btn a {
+    text-decoration: none;
+    font-weight: bold;
+}
+@media(max-width:430px){
+    .container{
+        width: 300px;
+    }
+}
